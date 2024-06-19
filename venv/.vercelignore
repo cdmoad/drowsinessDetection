@@ -1,0 +1,11 @@
+# .vercelignore
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pdb
+*.ds_store
+*.egg-info/
+venv/
+tests/
+docs/
