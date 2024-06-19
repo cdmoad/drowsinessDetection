@@ -74,6 +74,7 @@ def generate_frames():
     cv2.destroyAllWindows()
 
 @app.route('/')
+
 def index():
     return render_template('index.html')
 
@@ -81,5 +82,6 @@ def index():
 def video_feed():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
+
